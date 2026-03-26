@@ -54,6 +54,17 @@
 // alert(lado)
 
 // Perimetro de un cuadrado
-let area = Number (prompt("ingresa un numero"))
-let lado = (area *4)
-alert("el perimetro es de " + lado)
+// let area = Number (prompt("ingresa un numero"))
+// let lado = (area *4)
+// alert("el perimetro es de " + lado)
+
+//convertidor de minutos a segundos
+// let min = Number (prompt("ingresa un numero"))
+// let seg = (min * 60)
+// alert("el numero de segundos es " + seg)
+
+//convertidor de segundos a minutos
+// let seg = Number (prompt("ingresa un numero"))
+// let min = (seg / 60)
+// alert("el numero de minutos es " + min)
+
