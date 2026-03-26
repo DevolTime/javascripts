@@ -44,6 +44,11 @@
 // alert("Tus grados " + ce + " Celcius serian " + fa + " fahrenheit")
 // let fahrenheit = cs (celciuos *9 /5)+32
 
-let fa = Number(prompt("Grados fahrenheit a Celcius"))
-let ce = (fa-32)*5/9
-alert("Tus grados " + fa + " fahrenheit serian " + ce + " Celcius")
+// let fa = Number(prompt("Grados fahrenheit a Celcius"))
+// let ce = (fa-32)*5/9
+// alert("Tus grados " + fa + " fahrenheit serian " + ce + " Celcius")
+
+//  Area de un cuadrado
+let area = Number (prompt("ingresa un numero"))
+let lado = (area * area)
+alert(lado)
