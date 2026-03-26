@@ -21,3 +21,14 @@
 // let m = (km * 1000);
 // alert(m + " Metros");
 
+// Edad canina
+// let Edad = Number(prompt("Edad Humana"));
+// let Canina = (Edad*7);
+// alert(Canina + " Canina");
+
+
+// USD: 3,700 
+
+// let cop = Number (prompt("Pesos colombianos"));
+// let usd = Number (prompt("Dolares"))
+// let convertidor = (3,700)
