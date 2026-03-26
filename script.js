@@ -49,6 +49,11 @@
 // alert("Tus grados " + fa + " fahrenheit serian " + ce + " Celcius")
 
 //  Area de un cuadrado
+// let area = Number (prompt("ingresa un numero"))
+// let lado = (area * area)
+// alert(lado)
+
+// Perimetro de un cuadrado
 let area = Number (prompt("ingresa un numero"))
-let lado = (area * area)
-alert(lado)
+let lado = (area *4)
+alert("el perimetro es de " + lado)
