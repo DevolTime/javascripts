@@ -36,6 +36,14 @@
 // let cop = (usd * 3.699)
 // alert("Tus " + usd +  " serian " + cop + " pesos colombianos")
 
-// Convertidor de grador
 
+// Convertidor de grados, Celcius a fahrenheit
+// let ce = Number (prompt("Grados Celcius a fahrenheit"))
+// let fa = (ce*9 /5)+32
+// 4
+// alert("Tus grados " + ce + " Celcius serian " + fa + " fahrenheit")
+// let fahrenheit = cs (celciuos *9 /5)+32
 
+let fa = Number(prompt("Grados fahrenheit a Celcius"))
+let ce = (fa-32)*5/9
+alert("Tus grados " + fa + " fahrenheit serian " + ce + " Celcius")
