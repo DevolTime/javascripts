@@ -27,8 +27,15 @@
 // alert(Canina + " Canina");
 
 
-// USD: 3,700 
-
+// Convertidor COP - USD: 3,700 
 // let cop = Number (prompt("Pesos colombianos"));
-// let usd = Number (prompt("Dolares"))
-// let convertidor = (3,700)
+// let usd = (cop * 0.00027)
+// alert("Serian en Dolares " + usd)
+
+// let usd = Number (prompt("Dolares"));
+// let cop = (usd * 3.699)
+// alert("Tus " + usd +  " serian " + cop + " pesos colombianos")
+
+// Convertidor de grador
+
+
