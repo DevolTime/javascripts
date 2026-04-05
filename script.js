@@ -68,3 +68,27 @@
 // let min = (seg / 60)
 // alert("el numero de minutos es " + min)
 
+
+// let nombre = 'luis';
+// let edad = 33;
+// let correo = 'wasa@gmail.com';
+// console.log('Hola, tu nombre es '+ nombre +' tienes '+ edad + ' y tu correo es '+ correo);
+
+// let personas = prompt (`cuantas personas comieron?`)
+// let comio = prompt (`quien comio mas?`)
+// let valor = prompt (`cuanto fue la cuenta?`)
+// let total = (valor / personas)
+// let total2 = (total*1.6)
+// let total3 = (total/1.2)
+
+
+// console.log (`Comirron ${personas} personas, ${comio} fue el que mas comio, Todos tendran que pagar ${total3} y ${comio} tendra que pagar ${total2}`)
+
+let monto = Number(prompt("Monto a guardar"));
+let meses = Number(prompt("A cuantos meses"));
+let tasa = (monto * 0.010 );
+let total = (tasa*meses);
+
+
+
+console.log("El total de la cuenta es " + total);
