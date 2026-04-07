@@ -27,7 +27,7 @@
 // alert(Canina + " Canina");
 
 
-// Convertidor COP - USD: 3,700 
+// Convertidor COP - USD: 3,700
 // let cop = Number (prompt("Pesos colombianos"));
 // let usd = (cop * 0.00027)
 // alert("Serian en Dolares " + usd)
@@ -83,12 +83,58 @@
 
 
 // console.log (`Comirron ${personas} personas, ${comio} fue el que mas comio, Todos tendran que pagar ${total3} y ${comio} tendra que pagar ${total2}`)
+// let monto = Number(prompt("Monto a guardar"));
+// let meses = Number(prompt("A cuantos meses"));
+// let tasa = (monto * 0.010 );
+// let total = (tasa*meses);
+// console.log("El total de la cuenta es " + total);
 
-let monto = Number(prompt("Monto a guardar"));
-let meses = Number(prompt("A cuantos meses"));
-let tasa = (monto * 0.010 );
-let total = (tasa*meses);
+// let notas = []
+// let nota = Number(prompt("nota"))
+// let nota2 = Number(prompt("nota2"))
+// let nota3 = Number(prompt("nota3"))
+// let nota4 = Number(prompt("nota4"))
+// let nota5 = Number(prompt("nota5"))
+// notas.push(nota, nota2, nota3, nota4, nota5,)
+// let promedio = (nota[0] + nota2[1] + nota3[2] + nota4[3] + nota5[4]) / notas.length
+// console.log("el promedio es de " + promedio);
+
+//cuanto costo el producto, costo, cuesta menos de 100 se suma 10%,
+// entre 100 y 200 descuento de 10%
+// mas de 200 descuento de 20%
+
+// let precio = Number(prompt("precio del producto"))
+// let des = (precio * 1.10)
+// let des2 = (precio * 0.90)
+// let des3 = (precio * 0.80)
+
+// if (precio <= 0) {
+//     console.log("precio no valido");
+// } else if (precio < 100) {
+//     console.log(des, " mas 10% por envios");
+// } else if (precio < 200) {
+//     console.log(des2, " -10% descuento");
+// } else {
+//     console.log(des3, " -20% descuento");
+// }
 
 
+// let operacion = Number(prompt(`¿cual operacion quieres hacer?
+//     1) suma
+//     2) resta
+//     3) multiplicacion
+//     4) división
+// `))
 
-console.log("El total de la cuenta es " + total);
+// let n1 = Number(prompt("ingresa el primer numero"))
+// let n2 = Number(prompt("ingresa el segundo numero"))
+
+// if (operacion == 1) {
+//     console.log(n1 + n2)
+// } if (operacion == 2) {
+//     console.log(n1 - n2)
+// } if (operacion == 3) {
+//     console.log(n1 * n2)
+// } if (operacion == 4) {
+//     console.log(n1 / n2)
+// }
