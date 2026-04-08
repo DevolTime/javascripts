@@ -138,3 +138,22 @@
 // } if (operacion == 4) {
 //     console.log(n1 / n2)
 // }
+
+// juego de piedra, papel o tijera
+let jugador = prompt("ingresa el nombre del jugador 1")
+let options = [`Piedra`, `papel`, `tijera`]
+let azar = Math.floor(Math.random() * 3)
+let computer = options[azar]
+
+if (jugador === computer) {
+    console.log("El jugador saco " + jugador + ", " + " El bot saco " + computer + "," + " empate")
+}
+else if (jugador == `piedra` && computer == `papel` || computer == `piedra` && jugador == `papel`) {
+    console.log("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana papel")
+}
+else if (jugador == `papel` && computer == `tijera` || computer == `papel` && jugador == `tijera`) {
+    console.log("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana tijera")
+}
+else if (jugador == `tijera` && computer == `piedra` || computer == `tijera` && jugador == `piedra`) {
+    console.log("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana piedra")
+}
