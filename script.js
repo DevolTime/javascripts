@@ -162,13 +162,12 @@ let numero = [26, 2, 3, 4, 33, 6, 7, 22, 9, 11]
 let pares = []
 let impares = []
 
-for (let i = 0; i < numero.length; i++) {
+for (i = 0; i < numero.length; i++) {
     if (numero[i] % 2 == 0) {
         pares.push(numero[i])
-        console.log(pares + " par")
     } else {
         impares.push(numero[i])
-        console.log(impares + " impar")
     }
 }
-
+console.log(pares + " Numeros pares")
+console.log(impares + " Numeros pares")
