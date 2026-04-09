@@ -238,56 +238,57 @@
 
 
 
-const Isekai = [
+const isekai = [
     {
-        nombre: "Rimuru",
-        apellido: "Tempest",
+        nombre: "Rimuru Tempest",
         raza: "Slime",
-        nivel: 9800
+        nivel: 98
     },
     {
-        nombre: "Kazuto",
-        apellido: "Kirigaya",
+        nombre: "Kirito",
         raza: "Humano",
-        nivel: 8700
+        nivel: 87
     },
     {
-        nombre: "Naofumi",
-        apellido: "Iwatani",
+        nombre: "Naofumi Iwatani",
         raza: "Humano",
-        nivel: 8200
+        nivel: 82
     },
     {
-        nombre: "Momonga",
-        apellido: "Ainz Ooal Gown",
+        nombre: "Ainz Ooal Gown",
         raza: "No-muerto",
-        nivel: 9900
+        nivel: 99
     },
     {
-        nombre: "Subaru",
-        apellido: "Natsuki",
+        nombre: "Subaru Natsuki",
         raza: "Humano",
-        nivel: 6000
+        nivel: 60
     },
     {
-        nombre: "Kazuma",
-        apellido: "Satou",
+        nombre: "Kazuma Satou",
         raza: "Humano",
-        nivel: 5500
+        nivel: 55
     },
     {
-        nombre: "Tanya",
-        apellido: "Degurechaff",
+        nombre: "Tanya Degurechaff",
         raza: "Humano",
-        nivel: 9000
+        nivel: 90
     },
     {
         nombre: "Shiroe",
-        apellido: "",
         raza: "Humano",
-        nivel: 7800
+        nivel: 78
     }
 ];
 
-// ejemplo
-console.log(Isekai);
+let buscado = 90
+let nombre = []
+let raza = []
+let lvl = []
+
+for (let i = 0; i < isekai.length; i++) {
+    if (isekai[i].nivel < buscado) {
+        console.log(`Nombre: ${isekai[i].nombre}, Raza: ${isekai[i].raza}, Nivel: ${isekai[i].nivel}`);
+    } else {
+    }
+}
