@@ -158,16 +158,136 @@
 //     console.log("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana piedra")
 // }
 
-let numero = [26, 2, 3, 4, 33, 6, 7, 22, 9, 11]
-let pares = []
-let impares = []
+// let numero = [26, 2, 3, 4, 33, 6, 7, 22, 9, 11]
+// let pares = []
+// let impares = []
 
-for (i = 0; i < numero.length; i++) {
-    if (numero[i] % 2 == 0) {
-        pares.push(numero[i])
-    } else {
-        impares.push(numero[i])
+// for (i = 0; i < numero.length; i++) {
+//     if (numero[i] % 2 == 0) {
+//         pares.push(numero[i])
+//     } else {
+//         impares.push(numero[i])
+//     }
+// }
+// console.log(pares + " Numeros pares")
+// console.log(impares + " Numeros pares")
+
+
+// let tabla = Number(prompt("ingresa un numero"))
+// let rango = Number(prompt("ingrese el rango"))
+
+// if (tabla < 1 || rango < 1) {
+//     console.log('debe ser valores positivos')
+// } else if (tabla > 10) {
+//     console.log('la tabla debe ser entre 1 y 10')
+// } else {
+//     for (let i = 1; i <= rango; i++) {
+//         console.log(`${tabla} * ${i} = ${i * tabla}`)
+//     }
+// }
+
+// let numeros = [1, 6, 23, 9, 5, 9, 25]
+// let suma = 0
+// let max = 0
+
+// for (i = 0; i < numeros.length; i++) {
+//     let num = numeros[i];
+//     suma = suma + num
+//     if (max < num) {
+//         max = num
+//     }
+// }
+// console.log(suma + ' Suma')
+// console.log(max + ' Mayor')
+
+
+// const frutas = [
+//     "manzana", "banana", "naranja", "pera", "mango", "piña", "sandía", "kiwi", "melocotón", "cereza", "papaya", "uva"
+// ];
+
+
+
+
+// let max = []
+// let min = []
+// let letra = []
+// let reves = []
+
+// for (let i = 0; i < frutas.length; i++) {
+//     let len = frutas[i].length
+//     console.log(`la palabra ${frutas[i]} tiene ${len} letras`)
+// }
+
+// for (let i = frutas.length - 1; i > 0; i--) {
+//     reves.push(frutas[i])
+// }
+// console.log('al reves ' + reves)
+
+
+// for (i = 0; i < frutas.length; i++) {
+//     if (max.length < frutas) {
+//         max = frutas[i]
+
+//     } if (min.length > frutas) {
+//         min = frutas[i]
+//     }
+// }
+// console.log('la palabra mas corta es ' + min)
+// console.log('la palabra mas larga es ' + max)
+
+
+
+
+const Isekai = [
+    {
+        nombre: "Rimuru",
+        apellido: "Tempest",
+        raza: "Slime",
+        nivel: 9800
+    },
+    {
+        nombre: "Kazuto",
+        apellido: "Kirigaya",
+        raza: "Humano",
+        nivel: 8700
+    },
+    {
+        nombre: "Naofumi",
+        apellido: "Iwatani",
+        raza: "Humano",
+        nivel: 8200
+    },
+    {
+        nombre: "Momonga",
+        apellido: "Ainz Ooal Gown",
+        raza: "No-muerto",
+        nivel: 9900
+    },
+    {
+        nombre: "Subaru",
+        apellido: "Natsuki",
+        raza: "Humano",
+        nivel: 6000
+    },
+    {
+        nombre: "Kazuma",
+        apellido: "Satou",
+        raza: "Humano",
+        nivel: 5500
+    },
+    {
+        nombre: "Tanya",
+        apellido: "Degurechaff",
+        raza: "Humano",
+        nivel: 9000
+    },
+    {
+        nombre: "Shiroe",
+        apellido: "",
+        raza: "Humano",
+        nivel: 7800
     }
-}
-console.log(pares + " Numeros pares")
-console.log(impares + " Numeros pares")
+];
+
+// ejemplo
+console.log(Isekai);
