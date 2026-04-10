@@ -238,57 +238,82 @@
 
 
 
-const isekai = [
-    {
-        nombre: "Rimuru Tempest",
-        raza: "Slime",
-        nivel: 98
-    },
-    {
-        nombre: "Kirito",
-        raza: "Humano",
-        nivel: 87
-    },
-    {
-        nombre: "Naofumi Iwatani",
-        raza: "Humano",
-        nivel: 82
-    },
-    {
-        nombre: "Ainz Ooal Gown",
-        raza: "No-muerto",
-        nivel: 99
-    },
-    {
-        nombre: "Subaru Natsuki",
-        raza: "Humano",
-        nivel: 60
-    },
-    {
-        nombre: "Kazuma Satou",
-        raza: "Humano",
-        nivel: 55
-    },
-    {
-        nombre: "Tanya Degurechaff",
-        raza: "Humano",
-        nivel: 90
-    },
-    {
-        nombre: "Shiroe",
-        raza: "Humano",
-        nivel: 78
-    }
-];
+// const isekai = [
+//     {
+//         nombre: "Rimuru Tempest",
+//         raza: "Slime",
+//         nivel: 98
+//     },
+//     {
+//         nombre: "Kirito",
+//         raza: "Humano",
+//         nivel: 87
+//     },
+//     {
+//         nombre: "Naofumi Iwatani",
+//         raza: "Humano",
+//         nivel: 82
+//     },
+//     {
+//         nombre: "Ainz Ooal Gown",
+//         raza: "No-muerto",
+//         nivel: 99
+//     },
+//     {
+//         nombre: "Subaru Natsuki",
+//         raza: "Humano",
+//         nivel: 60
+//     },
+//     {
+//         nombre: "Kazuma Satou",
+//         raza: "Humano",
+//         nivel: 55
+//     },
+//     {
+//         nombre: "Tanya Degurechaff",
+//         raza: "Humano",
+//         nivel: 90
+//     },
+//     {
+//         nombre: "Shiroe",
+//         raza: "Humano",
+//         nivel: 78
+//     }
+// ];
 
-let buscado = 90
-let nombre = []
-let raza = []
-let lvl = []
+// let buscado = 90
+// let nombre = []
+// let raza = []
+// let lvl = []
 
-for (let i = 0; i < isekai.length; i++) {
-    if (isekai[i].nivel < buscado) {
-        console.log(`Nombre: ${isekai[i].nombre}, Raza: ${isekai[i].raza}, Nivel: ${isekai[i].nivel}`);
-    } else {
+// for (let i = 0; i < isekai.length; i++) {
+//     if (isekai[i].nivel < buscado) {
+//         console.log(`Nombre: ${isekai[i].nombre}, Raza: ${isekai[i].raza}, Nivel: ${isekai[i].nivel}`);
+//     } else {
+//     }
+// }
+
+let azar = Math.floor((Math.random() * 5) + 1);
+let estado = true;
+let vida = 3
+
+while (estado && vida > 0) {
+    let opcion = Number(prompt("Di un número entre 1 y 20, tienes 3 intentos"));
+
+    if (opcion < 1 || opcion > 20) {
+        alert("Ingresa un número válido");
+    } else if (opcion === azar) {
+        alert("Felicidades, has Ganado");
+        estado = false;
+    } else if (opcion > azar) {
+        vida--;
+        alert("El número es mayor");
+    } else if (opcion < azar) {
+        vida--;
+        alert("El número es menor");
     }
+}
+
+if (vida === 0) {
+    alert("Perdiste el nuemero era " + azar)
 }
