@@ -293,27 +293,57 @@
 //     }
 // }
 
-let azar = Math.floor((Math.random() * 5) + 1);
-let estado = true;
-let vida = 3
+// let azar = Math.floor((Math.random() * 5) + 1);
+// let estado = true;
+// let vida = 3
 
-while (estado && vida > 0) {
-    let opcion = Number(prompt("Di un número entre 1 y 20, tienes 3 intentos"));
+// while (estado && vida > 0) {
+//     let opcion = Number(prompt("Di un número entre 1 y 20, tienes 3 intentos"));
 
-    if (opcion < 1 || opcion > 20) {
-        alert("Ingresa un número válido");
-    } else if (opcion === azar) {
-        alert("Felicidades, has Ganado");
-        estado = false;
-    } else if (opcion > azar) {
-        vida--;
-        alert("El número es mayor");
-    } else if (opcion < azar) {
-        vida--;
-        alert("El número es menor");
-    }
-}
+//     if (opcion < 1 || opcion > 20) {
+//         alert("Ingresa un número válido");
+//     } else if (opcion === azar) {
+//         alert("Felicidades, has Ganado");
+//         estado = false;
+//     } else if (opcion > azar) {
+//         vida--;
+//         alert("El número es mayor");
+//     } else if (opcion < azar) {
+//         vida--;
+//         alert("El número es menor");
+//     }
+// }
 
-if (vida === 0) {
-    alert("Perdiste el nuemero era " + azar)
+// if (vida === 0) {
+//     alert("Perdiste el nuemero era " + azar)
+// }
+
+// Estaciones
+// let numero = Number(prompt("ingresa el mes en numeros"))
+// let mes;
+// let estacion;
+
+// switch (numero) {
+//     case 1: case 2: case 12:
+//         alert("Es invierno")
+//         break;
+//     case 3: case 4: case 5:
+//         alert("Primavera")
+//         break;
+//     case 6: case 7: case 8:
+//         alert("Verano")
+//         break;
+//     case 9: case 10: case 11:
+//         alert("Otoño")
+//     default:
+//         alert("Ese no es un mes")
+// }
+
+// Cacular año bisiesto
+let año = Number(prompt("Ingresa un año"));
+
+if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+    alert(año + " es un año bisiesto");
+} else {
+    alert(año + " NO es un año bisiesto");
 }
