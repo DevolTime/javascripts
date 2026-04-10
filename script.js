@@ -340,10 +340,23 @@
 // }
 
 // Cacular año bisiesto
-let año = Number(prompt("Ingresa un año"));
+// let año = Number(prompt("Ingresa un año"));
 
-if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
-    alert(año + " es un año bisiesto");
-} else {
-    alert(año + " NO es un año bisiesto");
+// if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+//     alert(año + " es un año bisiesto");
+// } else {
+//     alert(año + " NO es un año bisiesto");
+// }
+
+
+// Año bisiesto 2
+let data = [1200, 3000, 5000, 400, 600, 4, 3]
+
+for (let i = 0; i < data.length; i++) {
+    let año = data[i]
+    if ((año % 4 === 0 && año % 100 !== 0) || (año % 400 === 0)) {
+        console.log(año + " es un año bisiesto");
+    } else {
+        console.log(año + " NO es un año bisiesto");
+    }
 }
