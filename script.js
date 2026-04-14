@@ -158,6 +158,8 @@
 //     console.log("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana piedra")
 // }
 
+
+
 // let numero = [26, 2, 3, 4, 33, 6, 7, 22, 9, 11]
 // let pares = []
 // let impares = []
@@ -293,6 +295,7 @@
 //     }
 // }
 
+// Adivina el Numero
 // let azar = Math.floor((Math.random() * 5) + 1);
 // let estado = true;
 // let vida = 3
@@ -361,4 +364,3 @@
 //     }
 // }
 
-Hola
