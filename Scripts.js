@@ -2,25 +2,23 @@ let btn1 = document.getElementById("btn1");
 
 btn1.addEventListener('click', () => {
 
-    let options = ['piedra', '´pepel', 'tijera'];
-    let azar = Math.floor(Math.random() * 3);
-    let pc = options[azar]
+let jugador = prompt("Elije una opción: piedra, papel o tijera")
+let options = [`piedra`, `papel`, `tijera`]
+let azar = Math.floor(Math.random() * 3)
+let computer = options[azar]
 
-    let user = prompt('piedra, papel o tijera?');
-
-    if (user === pc) {
-
-    } else if (
-        (user == 'tijera' && pc == 'papel') ||
-        (user == 'piedra' && pc == 'tijera') ||
-        (user == 'papel' && pc == 'piedra')
-
-    ) {
-        alert('ganaste')
-
-    } else {
-        alert('perdiste')
-    }
+if (jugador === computer) {
+    alert("El jugador saco " + jugador + ", " + " El bot saco " + computer + "," + " empate")
+}
+else if (jugador == `piedra` && computer == `papel` || computer == `piedra` && jugador == `papel`) {
+    alert("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana papel")
+}
+else if (jugador == `papel` && computer == `tijera` || computer == `papel` && jugador == `tijera`) {
+    alert("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana tijera")
+}
+else if (jugador == `tijera` && computer == `piedra` || computer == `tijera` && jugador == `piedra`) {
+    alert("El jugador saco " + jugador + "," + " El bot saco " + computer + "," + " gana piedra")
+}
 });
 
 
