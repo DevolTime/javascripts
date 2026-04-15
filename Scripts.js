@@ -120,3 +120,4 @@ for (let i = 0; i < personajes.length; i++) {
     </div>`
     
 }
+
