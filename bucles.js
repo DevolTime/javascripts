@@ -3,14 +3,22 @@ const nombre = [
     { nombre: "María", apellido: "paes", edad: 28, altura: 1.72, Peso: 43 },
     { nombre: "Pedro", apellido: "gonzales", edad: 23, altura: 1.85, Peso: 48 },
     { nombre: "Ana", apellido: "franca", edad: 30, altura: 1.55, Peso: 60 },
-    { nombre: "Luis", apellido: "baez", edad: 35, altura: 1.63, Peso: 90 }
+    { nombre: "Luis", apellido: "baez", edad: 25, altura: 1.80, Peso: 76 }
 ];
+
+
+
+
+
 
 
 for (let i = 0; i < nombre.length; i++) {
     const persona = nombre[i];
     const imc = calcularIMC(persona.Peso, persona.altura);
-    console.log(`\nNombre: ${persona.nombre} ${persona.apellido} \nAltura: ${persona.altura} \nPeso: ${persona.Peso} \nIMC: ${imc.toFixed(1)}`);
+    console.log(`\nNombre: ${persona.nombre} ${persona.apellido} \nAltura: ${persona.altura} \nPeso: ${persona.Peso} \nIMC:`);
+    console.log('IMC:', Number(imc.toFixed(1)));
+
+    
 
     if (imc < 18.5) {
         console.log(`Peso inferior al normal:   Menos de 18.5`)
